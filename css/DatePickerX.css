@@ -197,6 +197,7 @@
 
 .date-picker-x .dpx-selected {
 	background: #4090db;
+	color:#fff;
 	border-radius: 5px;
 }
 
@@ -209,7 +210,7 @@
 }
 
 .date-picker-x .dpx-disabled {
-	color: #666 !important;
+	color: #999999 !important;
 	cursor: default !important;
 	box-shadow: none !important;
 }
