@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../fonts/ProximaNovaSemibold.eot');
+    src: url('../fonts/ProximaNovaSemibold.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaSemibold.woff2') format('woff2'),
+         url('../fonts/ProximaNovaSemibold.woff') format('woff'),
+         url('../fonts/ProximaNovaSemibold.ttf') format('truetype'),
+         url('../fonts/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/ProximaNovaRegular.eot');
+    src: url('../fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaRegular.woff2') format('woff2'),
+         url('../fonts/ProximaNovaRegular.woff') format('woff'),
+         url('../fonts/ProximaNovaRegular.ttf') format('truetype'),
+         url('../fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNovaBold.eot');
+    src: url('../fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaBold.woff2') format('woff2'),
+         url('../fonts/ProximaNovaBold.woff') format('woff'),
+         url('../fonts/ProximaNovaBold.ttf') format('truetype'),
+         url('../fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/HelveticaNeueBold.eot');
+    src: url('../fonts/HelveticaNeueBold.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueBold.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueBold.woff') format('woff'),
+         url('../fonts/HelveticaNeueBold.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueBold.svg#HelveticaNeueBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaCEBold';
+    src: url('../fonts/HelveticaCEBold.eot');
+    src: url('../fonts/HelveticaCEBold.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaCEBold.woff2') format('woff2'),
+         url('../fonts/HelveticaCEBold.woff') format('woff'),
+         url('../fonts/HelveticaCEBold.ttf') format('truetype'),
+         url('../fonts/HelveticaCEBold.svg#HelveticaCEBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: url('../fonts/HelveticaNeue.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeue.woff2') format('woff2'),
+         url('../fonts/HelveticaNeue.woff') format('woff'),
+         url('../fonts/HelveticaNeue.ttf') format('truetype'),
+         url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro.eot');
+    src: url('../fonts/MyriadPro.eot') format('embedded-opentype'),
+         url('../fonts/MyriadPro.woff2') format('woff2'),
+         url('../fonts/MyriadPro.woff') format('woff'),
+         url('../fonts/MyriadPro.ttf') format('truetype'),
+         url('../fonts/MyriadPro.svg#MyriadPro') format('svg');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'nunito_sans_regular', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #262626;
+    background-image:url(../img/background-shape.svg);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width:100%;
+    max-width: 935px;
+    margin:0 auto;
+}
+
+h1{
+    font-family: 'MyriadPro', Arial, sans-serif;
+    font-size: 35px;
+    line-height: 1;
+    color: #262626;
+}
+
+h2{
+
+}
+
+p{
+    font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    margin: 0;
+}
+
+.profile-page__info{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.profile-head{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 30px;
+}
+
+.profile-head__logo{
+    margin: 0 65px;
+}
+
+.profile-logo__img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile-title{
+    display: inline-block;
+}
+
+.profile-start-date{
+    display: inline-block;
+    font-family: 'HelveticaNeue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    color: #4090db;
+    border: 1px solid #4090db;
+    border-radius: 3px;
+    padding: 10px 12px;
+    margin: 0 0 0 15px;
+}
+
+.profile-amount{
+    display: inline-block;
+    font-family: 'ProximaNovaRegular', Arial, sans-serif;
+    font-size: 17px;
+    color: #3d4044;
+    margin: 0 25px 0 0;
+}
+
+.profile-amount:last-child{
+    margin: 0;
+}
+
+.profile-amount_bold{
+    font-family: 'ProximaNovaBold', Arial, sans-serif;
+}
+
+.profile-info__select-date{
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-info__select-date input::-webkit-input-placeholder { 
+    font-family:'HelveticaNeue', Arial, sans-serif;
+    font-size: 15px;
+    color: #333333; 
+}
+
+.date-picker-x-input{
+    width:100%;
+    max-width: 180px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px 0 0;
+}
+
+.select-date__label{
+    font-family:'ProximaNovaRegular', Arial, sans-serif;;
+    font-size: 17px;
+    color: #262626;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mode-switchers{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mode-switchers__grid{
+    width: 31px;
+    height: 30px;
+    background-image:url(../img/switchers/switcher-grid.png);
+    background-position: -2px 35px;
+}
+
+.mode-switchers__list{
+    width: 32px;
+    height: 30px;
+    background-image:url(../img/switchers/switcher-list.png);
+    background-position: -2px 35px;
+    margin-left: 15px;
+}
+
+.mode-switchers__grid_active{
+    background-position: -2px -4px;
+}
+
+.mode-switchers__list_active{
+    background-position: -2px -3px;
+}
+
+.profile-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.profile-posts__post-item{
+    width:30%;
+    margin-bottom: 60px;
+}
+
+.profile-post__row{
+    z-index: 101;
+    position: relative;
+    display:flex;
+}
+
+.profile-post__row_right-align{
+    justify-content: flex-end;
+}
+
+.profile-post__row_center-align{
+    justify-content: center;
+}
+.profile-post__video-icon{
+    margin: 10px 15px 0 0;
+}
+
+.profile-post__img{
+    display: inline-block;
+    position: absolute;
+}
+
+.profile-post__img img{
+    max-width: 280px;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.profile-post__img:after{
+    content:'';
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height:100%;
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.post-item__date{
+    width: 30%;
+}
+
+.post-item__info{
+    display:flex;
+    width:70%;
+}
+
+.post-item__likes, .post-item__comments{
+    display: flex;
+}
+
+.post-item__likes .post-item__info-img {
+    background-image: url(../img/post-info/post-item-sprite.png);
+    width: 25px;
+    height: 25px;
+    background-position: top;
+}
+
+.post-item__comments .post-item__info-img {
+    background-image: url(../img/post-info/post-item-sprite.png);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+}
+
+.post-item__watches .post-item__info-img {
+    background-image: url(../img/post-info/post-item-sprite.png);
+    width: 25px;
+    height: 25px;
+    background-position: bottom;
+}
+
+
+
+
+button{
+    font-family: 'ProximaNovaRegular', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius:22px;
+    outline: none;
+    display: block;
+}
+
+.profile-load-more-posts__button{
+    padding: 10px 30px;
+    margin: 45px auto 50px;
+}
+
+@media screen and (max-width:769px) {
+    .container{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .profile-head__logo {
+        margin: 0 auto;
+    }
+
+    .profile-title{
+        margin: 0 auto;
+        display: table;
+    }
+
+    .profile-info__row{
+        margin-bottom: 25px;
+    }
+
+    .profile-start-date{
+        margin: 0 auto;
+        display: table;
+    }
+
+    .profile-head__info{
+        width: 100%;
+    }
+
+    .profile-posts__post-item{
+        width: 45%;
+    }
+
+    .profile-post__img img{
+        max-width: 100%;
+    }
+
+    .profile-info__row_center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-info__select-date {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .profile-posts {
+        justify-content: center;
+    }
+
+    .profile-posts__post-item{
+        width: 90%;
+    }
+
+    .profile-post__img img{
+        max-width: 100%;
+    }
+}
+
+
+
