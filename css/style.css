@@ -385,6 +385,11 @@ button{
     .date-picker-x-container {
         margin: 10px 0;
     }
+
+    .date-picker-x {
+        left: -57px;
+        top: 30px !important;
+    }
 }
 
 

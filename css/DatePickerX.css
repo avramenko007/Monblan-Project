@@ -218,3 +218,16 @@
 	box-shadow: inset 0 0 0 2px #66a3ff !important;
 }*/
 
+@media screen and (max-width:325px) {
+    .date-picker-x {
+        left: -50px;
+        width: 290px !important;
+    }
+
+    .date-picker-x[data-dpx-type="day"] .dpx-item {
+        -ms-flex-preferred-size: 38px !important;
+        flex-basis: 38px;
+    }
+}
+
+
