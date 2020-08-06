@@ -216,8 +216,9 @@ p{
 }
 
 .profile-posts__post-item{
-    width:30%;
-    margin-bottom: 60px;
+    width: 281px;
+    height: 280px;
+    margin-bottom: 30px;
 }
 
 .profile-post__row{
