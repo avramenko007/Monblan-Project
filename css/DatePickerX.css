@@ -201,9 +201,9 @@
 	border-radius: 5px;
 }
 
-/*.date-picker-x .dpx-weekend {
-	color: #f99;
-}*/
+.date-picker-x .dpx-weekend {
+	background-color: #f5f5f5;
+}
 
 .date-picker-x .dpx-out {
 	color: #999999;

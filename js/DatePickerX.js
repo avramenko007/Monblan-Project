@@ -20,7 +20,7 @@
         format           : 'dd_mm_yyyy',
         minDate          : new Date(0, 0),
         maxDate          : new Date(9999, 11, 31),
-        weekDayLabels    : ['Mo', 'Tu', 'We', 'Th', 'Fr', 'St', 'Su'],
+        weekDayLabels    : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St'],
         shortMonthLabels : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         singleMonthLabels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         todayButton      : false,
@@ -339,7 +339,7 @@
                 !options.mondayFirst && --maxDay && createElement('span', ['dpx-item', 'dpx-weekday', 'dpx-weekend'], elements.content, options.weekDayLabels[6]);
                 for (var day = 0; day < maxDay; ++day) {
                     var classes = ['dpx-item', 'dpx-weekday'];
-                    day > 4 && classes.push('dpx-weekend');
+                    day < 1 && classes.push('dpx-weekend');
                     createElement('span', classes, elements.content, options.weekDayLabels[day])
                 }
             }
@@ -380,7 +380,7 @@
                 title += dt.getFullYear();
 
                 (mode ? (mode === 2 ? dt.getMonth() !== setMonth : dt.getFullYear() !== setYear) : (dt.getFullYear() < zeroYear || dt.getFullYear() > zeroYear + 9)) && classes.push('dpx-out');
-                mode === 2 && (dt.getDay() === 6 || dt.getDay() === 0) && classes.push('dpx-weekend');
+                mode === 2 && (dt.getDay() === 1 || dt.getDay() === true) && classes.push('dpx-weekend');
                 dt.getTime() === current && classes.push('dpx-current');
                 dt.getTime() === value && classes.push('dpx-selected');
                 (dt.getTime() < dtMin || dt.getTime() > dtMax) && classes.push('dpx-disabled');
