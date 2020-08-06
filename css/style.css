@@ -236,6 +236,16 @@ p{
     align-items: flex-end;
     width: 100%;
     padding: 0 0 10px 10px;
+    height: min-content;
+    height: max-content;
+}
+
+.profile-post-block_end{
+    top: 170px;
+}
+
+.profile-post-block_center{
+    top: 120px;
 }
 
 .profile-post__row{
@@ -287,7 +297,7 @@ p{
 }
 
 .post-item__date{
-    width: 30%;
+    width: 40%;
 }
 
 .post-item__info{
