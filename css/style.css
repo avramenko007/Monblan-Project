@@ -219,16 +219,38 @@ p{
     width: 281px;
     height: 280px;
     margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-post__row_end-align{
+    align-items: flex-end;
+}
+
+.profile-post__block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 0 10px 10px;
 }
 
 .profile-post__row{
     z-index: 101;
     position: relative;
     display:flex;
+    width: 100%;
+    padding: 0 0 10px 10px;
 }
 
 .profile-post__row_right-align{
+   /* justify-content: flex-end;*/
     justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    right: 0;
 }
 
 .profile-post__row_center-align{
