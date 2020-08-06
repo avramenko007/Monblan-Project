@@ -305,7 +305,7 @@ p{
     width:70%;
 }
 
-.post-item__likes, .post-item__comments{
+.post-item__likes, .post-item__comments, .post-item__watches{
     display: flex;
     width: 50%;
 }
