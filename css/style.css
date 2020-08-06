@@ -71,6 +71,7 @@ body {
     line-height: 1.1;
     color: #262626;
     background-image:url(../img/background-shape.svg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
