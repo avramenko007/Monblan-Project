@@ -374,6 +374,17 @@ button{
     .profile-post__img img{
         max-width: 100%;
     }
+
+    .select-date__label{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .date-picker-x-container {
+        margin: 10px 0;
+    }
 }
 
 
