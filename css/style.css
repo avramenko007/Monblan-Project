@@ -236,8 +236,8 @@ p{
     align-items: flex-end;
     width: 100%;
     padding: 0 0 10px 10px;
-    height: min-content;
     height: max-content;
+    position: relative;
 }
 
 .profile-post-block_end{
@@ -307,6 +307,7 @@ p{
 
 .post-item__likes, .post-item__comments{
     display: flex;
+    width: 50%;
 }
 
 .post-item__likes .post-item__info-img {
@@ -314,6 +315,7 @@ p{
     width: 25px;
     height: 25px;
     background-position: top;
+    margin-right: 5px;
 }
 
 .post-item__comments .post-item__info-img {
@@ -321,6 +323,7 @@ p{
     width: 25px;
     height: 25px;
     background-position: center;
+    margin-right: 5px;
 }
 
 .post-item__watches .post-item__info-img {
@@ -328,6 +331,7 @@ p{
     width: 25px;
     height: 25px;
     background-position: bottom;
+    margin-right: 5px;
 }
 
 
