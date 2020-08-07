@@ -38,14 +38,14 @@
                         <div class="profile-info__select-date">
                             <span class="select-date__label">Date</span>
                             <label class="real">
-                                <input type="text" id="myForm" name="realDPX-min" placeholder="from">
-                                <i class="fas fa-times" onclick="clearThis()"></i>
-                                <!--<input type="button" onclick="myFunction()">-->
+                                <input type="text" id="start-date" name="realDPX-min" placeholder="from">
+                                <button class="start-button" onclick="functionStart()"><i class="fas fa-times"></i></button>
                             </label>
                             
                             <div>
                                 <label class="real">
-                                    <input type="text" name="realDPX-max" placeholder="to">
+                                    <input type="text" id="end-date" name="realDPX-max" placeholder="to">
+                                    <button class="end-button" onclick="functionEnd()"><i class="fas fa-times"></i></button>
                                 </label>
                             </div>
                         </div>
@@ -486,12 +486,18 @@
     });
 </script>
 <script type="text/javascript">
-    function clearThis(target){
-        target.value= "";
+    function functionStart() {
+        document.getElementById("start-date").value = "";
+        var element = document.getElementsByClassName("dpx-item");
+        console.log(element);
+        element.classList.remove("dpx-selected");
     }
-    /*function myFunction() {
-        document.getElementById("myForm").value = "";
-    }*/
+    function functionEnd() {
+        document.getElementById("end-date").value = "";
+        var element = document.getElementsByClassName("dpx-item");
+        console.log(element);
+        element.classList.remove("dpx-selected");
+    }
 </script>
 
 </body>

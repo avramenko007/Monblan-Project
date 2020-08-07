@@ -236,4 +236,18 @@
     top: 13px;
 }
 
+.start-button, .end-button {
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	right: 0;
+}
+
+.start-button{
+    top: 2px;
+}
+
+.end-button{
+    top: -9px;
+}
 
