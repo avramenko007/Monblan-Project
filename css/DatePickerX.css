@@ -82,7 +82,6 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -95,6 +94,7 @@
 
 .date-picker-x .dpx-prev,
 .date-picker-x .dpx-next {
+	font-family: 'HelveticaNeueBold', Arial, Helvetica, sans-serif;
 	color: #333333;
 	cursor: pointer;
 	display: block;
@@ -138,7 +138,6 @@
 }
 
 .date-picker-x .dpx-btns {
-	border-top: 1px solid #ccc;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -229,6 +228,12 @@
         -ms-flex-preferred-size: 38px !important;
         flex-basis: 38px;
     }
+}
+
+.fa-times{
+	position: absolute;
+    right: 20px;
+    top: 13px;
 }
 
 

@@ -334,9 +334,6 @@ p{
     margin-right: 5px;
 }
 
-
-
-
 button{
     font-family: 'ProximaNovaRegular', Arial, sans-serif;
     font-size: 12px;
@@ -347,6 +344,7 @@ button{
     border-radius:22px;
     outline: none;
     display: block;
+    cursor: pointer;
 }
 
 .profile-load-more-posts__button{

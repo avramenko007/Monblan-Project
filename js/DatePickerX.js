@@ -122,9 +122,9 @@
             elements.container = createElement('div', 'date-picker-x');
 
             var titleBox = createElement('div', 'dpx-title-box', elements.container);
-            elements.prevTitle = createElement('span', 'dpx-prev', titleBox, '&#x276e;');
+            elements.prevTitle = createElement('span', 'dpx-prev', titleBox, '«');
             elements.title = createElement('span', 'dpx-title', titleBox);
-            elements.nextTitle = createElement('span', 'dpx-next', titleBox, '&#x276f;');
+            elements.nextTitle = createElement('span', 'dpx-next', titleBox, '»');
 
             elements.content = createElement('div', 'dpx-content-box', elements.container);
 

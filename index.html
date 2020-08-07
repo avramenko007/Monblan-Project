@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/normalize.css?v=1.0">
   <link rel="stylesheet" href="css/style.css?v=1.0">
   <link rel="stylesheet" href="css/DatePickerX.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
 </head>
 
@@ -37,7 +38,9 @@
                         <div class="profile-info__select-date">
                             <span class="select-date__label">Date</span>
                             <label class="real">
-                                <input type="text" name="realDPX-min" placeholder="from">
+                                <input type="text" id="myForm" name="realDPX-min" placeholder="from">
+                                <i class="fas fa-times" onclick="clearThis()"></i>
+                                <!--<input type="button" onclick="myFunction()">-->
                             </label>
                             
                             <div>
@@ -482,5 +485,14 @@
 
     });
 </script>
+<script type="text/javascript">
+    function clearThis(target){
+        target.value= "";
+    }
+    /*function myFunction() {
+        document.getElementById("myForm").value = "";
+    }*/
+</script>
+
 </body>
 </html>
