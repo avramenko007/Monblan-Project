@@ -95,10 +95,6 @@ h1{
     color: #262626;
 }
 
-h2{
-
-}
-
 p{
     font-family: 'ProximaNovaSemibold', Arial, sans-serif;
     font-size: 17px;
@@ -139,7 +135,7 @@ p{
     border: 1px solid #4090db;
     border-radius: 3px;
     padding: 10px 12px;
-    margin: 0 0 0 15px;
+    margin-left: 15px;
 }
 
 .profile-amount{
@@ -167,16 +163,16 @@ p{
 .profile-info__select-date input::-webkit-input-placeholder { 
     font-family:'HelveticaNeue', Arial, sans-serif;
     font-size: 15px;
-    color: #333333; 
+    color: #333; 
 }
 
 .date-picker-x-input{
     width:100%;
     max-width: 180px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    margin: 0 10px 0 0;
+    margin-right: 10px;;
 }
 
 .select-date__label{
@@ -193,27 +189,36 @@ p{
     justify-content: flex-end;
 }
 
+.mode-switchers li{
+    list-style: none;
+    background-repeat: no-repeat;
+}
+
+.mode-switchers a{
+    font-size: 0;
+}
+
 .mode-switchers__grid{
     width: 31px;
     height: 30px;
-    background-image:url(../img/switchers/switcher-grid.png);
-    background-position: -2px 35px;
+    background-image:url(../img/switchers/switcher-grid.svg);
+    background-position: 2px -29px;
 }
 
 .mode-switchers__list{
     width: 32px;
     height: 30px;
-    background-image:url(../img/switchers/switcher-list.png);
-    background-position: -2px 35px;
+    background-image:url(../img/switchers/switcher-list.svg);
+    background-position: 0px -30px;
     margin-left: 15px;
 }
 
 .mode-switchers__grid_active{
-    background-position: -2px -4px;
+    background-position: 2px 3px;
 }
 
 .mode-switchers__list_active{
-    background-position: -2px -3px;
+    background-position: 1px 3px;
 }
 
 .profile-posts{
@@ -230,9 +235,12 @@ p{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 .profile-post__row_end-align{
+    box-sizing: border-box;
+    height: 7%;
     align-items: flex-end;
 }
 
@@ -240,19 +248,17 @@ p{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    align-items: flex-end;
-    width: 100%;
     padding: 0 0 10px 10px;
     height: max-content;
     position: relative;
 }
 
-.profile-post-block_end{
-    top: 170px;
-}
-
-.profile-post-block_center{
-    top: 120px;
+.profile-post__block_center{
+    padding: 0 0 0 10px;
+    position: relative;
+    height: 93%;
+    box-sizing: border-box;
+    align-content: center;
 }
 
 .profile-post__row{
@@ -263,8 +269,11 @@ p{
     padding: 0 0 10px 10px;
 }
 
+.profile-post__row_center-align-new{
+    height: 7%;
+}
+
 .profile-post__row_right-align{
-   /* justify-content: flex-end;*/
     justify-content: flex-end;
     width: 100%;
     position: absolute;
@@ -279,7 +288,6 @@ p{
 }
 
 .profile-post__img{
-    display: inline-block;
     position: absolute;
 }
 
@@ -317,16 +325,20 @@ p{
     width: 50%;
 }
 
+.post-item__info-img {
+    background-repeat: no-repeat;
+}
+
 .post-item__likes .post-item__info-img {
-    background-image: url(../img/post-info/post-item-sprite.png);
+    background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
-    height: 25px;
+    height: 21px;
     background-position: top;
     margin-right: 5px;
 }
 
 .post-item__comments .post-item__info-img {
-    background-image: url(../img/post-info/post-item-sprite.png);
+    background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
     height: 25px;
     background-position: center;
@@ -334,7 +346,7 @@ p{
 }
 
 .post-item__watches .post-item__info-img {
-    background-image: url(../img/post-info/post-item-sprite.png);
+    background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
     height: 25px;
     background-position: bottom;
