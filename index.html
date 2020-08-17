@@ -39,13 +39,13 @@
                             <span class="select-date__label">Date</span>
                             <label class="real">
                                 <input type="text" id="start-date" name="realDPX-min" placeholder="from">
-                                <button class="start-button" onclick="functionStart()"><i class="fas fa-times"></i></button>
+                                <button id="functionStart" class="start-button" onclick="functionStart()"><i class="fas fa-times"></i></button>
                             </label>
                             
                             <div>
                                 <label class="real">
                                     <input type="text" id="end-date" name="realDPX-max" placeholder="to">
-                                    <button class="end-button" onclick="functionEnd()"><i class="fas fa-times"></i></button>
+                                    <button id="functionEnd" class="end-button" onclick="functionEnd()"><i class="fas fa-times"></i></button>
                                 </label>
                             </div>
                         </div>
@@ -55,364 +55,364 @@
         </header>
         <main class="profile-page__content">
             <div class="container">
-            <ul class="mode-switchers">  
-                <li class="mode-switchers__grid" ><a href="#">switcher for grid</a></li>
-                <li class="mode-switchers__list mode-switchers__list_active"><a href="#">switcher for list</a></li>
-            </ul>
-            <div class="profile-posts">
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img.jpg"></div>
-                    <div class="profile-post__block profile-post__block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
+                <ul class="mode-switchers">  
+                    <li class="mode-switchers__grid mode-switchers__grid_active" ><a id="grid" href="#">switcher for grid</a></li>
+                    <li class="mode-switchers__list"><a id="list" href="#">switcher for list</a></li>
+                </ul>
+                <div id="profile-posts" class="profile-posts profile-posts_grid">
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img.jpg"></div>
+                        <div class="profile-post__block profile-post__block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
                                     </div>
-                                    <p>128</p>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
                                 </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
                                     </div>
-                                    <p>31</p>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
                         </div>
                     </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-2.jpg"></div>
+                        <div class="profile-post__block">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-3.jpg"></div>
+                        <div class="profile-post__row profile-post__row_right-align profile-post__video">
+                            <img src="./img/posts/video-icon.svg" class="profile-post__video-icon">
+                        </div>
+                        <div class="profile-post__block">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-4.jpg"></div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-5.jpg"></div>
+                        <div class="profile-post__row profile-post__row_right-align profile-post__video">
+                            <img src="./img/posts/video-icon.svg" class="profile-post__video-icon">
+                        </div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-6.jpg"></div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-7.jpg"></div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-8.jpg"></div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
+                    </div>
+                    <div class="profile-posts__post-item blogBox moreBox">
+                        <div class="profile-post__img"><img src="./img/posts/post-img-9.jpg"></div>
+                        <div class="profile-post__block profile-post-block_center">
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>Today</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>128</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>31</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-post__row">
+                                <div class="post-item__date"><p>9-08-2016</p></div>
+                                <div class="post-item__info">
+                                    <div class="post-item__likes">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>67</p>
+                                    </div>
+                                    <div class="post-item__comments">
+                                        <div class="post-item__info-img">
+                                        </div>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post__row profile-post__upload profile-post__row_center-align profile-post__row_end-align">
+                            <p>Image upload: 11-04-2016 </p>
+                        </div>
                     </div>
                 </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-2.jpg"></div>
-                    <div class="profile-post__block">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-3.jpg"></div>
-                    <div class="profile-post__row profile-post__row_right-align">
-                        <img src="./img/posts/video-icon.svg" class="profile-post__video-icon">
-                    </div>
-                    <div class="profile-post__block">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__watches">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-4.jpg"></div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-5.jpg"></div>
-                    <div class="profile-post__row profile-post__row_right-align">
-                        <img src="./img/posts/video-icon.svg" class="profile-post__video-icon">
-                    </div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-6.jpg"></div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-7.jpg"></div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-8.jpg"></div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
-                </div>
-                <div class="profile-posts__post-item">
-                    <div class="profile-post__img"><img src="./img/posts/post-img-9.jpg"></div>
-                    <div class="profile-post__block profile-post-block_center">
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>Today</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>128</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>31</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-post__row">
-                            <div class="post-item__date"><p>9-08-2016</p></div>
-                            <div class="post-item__info">
-                                <div class="post-item__likes">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>67</p>
-                                </div>
-                                <div class="post-item__comments">
-                                    <div class="post-item__info-img">
-                                    </div>
-                                    <p>22</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-post__row profile-post__row_center-align profile-post__row_end-align">
-                        <p>Image upload: 11-04-2016 </p>
-                    </div>
+                <div class="profile-load-more-posts" id="loadMore">
+                    <button class="button profile-load-more-posts__button">Load more</a>
                 </div>
             </div>
-            <div class="profile-load-more-posts">
-                <button class="button profile-load-more-posts__button">Load more</button>
-            </div>
-        </div>
         </main>
   <script src="js/DatePickerX.js"></script>
   <script>
@@ -438,17 +438,56 @@
 <script type="text/javascript">
     function functionStart() {
         document.getElementById("start-date").value = "";
-        var element = document.getElementsByClassName("dpx-selected");
-        console.log(element);
-        element.classList.remove("dpx-selected");
+        document.querySelectorAll('.dpx-selected').forEach(node => node.classList.remove('dpx-selected'));
     }
     function functionEnd() {
         document.getElementById("end-date").value = "";
-        var element = document.getElementsByClassName("dpx-selected");
-        console.log(element);
-        element.classList.remove("dpx-selected");
+        document.querySelectorAll('.dpx-selected').forEach(node => node.classList.remove('dpx-selected'));
     }
 </script>
+<script type="text/javascript" src="./js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();
+        $('.profile-posts').addClass('profile-posts_list').removeClass('profile-posts_grid');
+        $('.mode-switchers__list').addClass('mode-switchers__list_active');
+        $('.mode-switchers__grid').removeClass('mode-switchers__grid_active')});
+        $('#grid').click(function(event){event.preventDefault();
+        $('.profile-posts').removeClass('profile-posts_list');
+        $('.profile-posts').addClass('profile-posts_grid');
+        $('.mode-switchers__grid').addClass('mode-switchers__grid_active');
+        $('.mode-switchers__list').removeClass('mode-switchers__list_active')});
+});
+</script>
+<script>
+    var parent = document.getElementsByClassName('profile-posts')[0],
+    items  = parent.getElementsByClassName('profile-posts__post-item'),
+    loadMoreBtn =  document.querySelector('#loadMore'),
+    maxItems = 3,
+    hiddenClass = "visually-hidden";
 
+
+    [].forEach.call(items, function(item, idx){
+        if (idx > maxItems - 1) {
+            item.classList.add(hiddenClass);
+        }
+    });
+
+    loadMoreBtn.addEventListener('click', function(){
+
+    [].forEach.call(document.querySelectorAll('.' + hiddenClass), function(item, idx){
+        /*console.log(item);*/
+        if (idx < maxItems - 0) {
+            item.classList.remove(hiddenClass);
+        }
+
+        if ( document.querySelectorAll('.' + hiddenClass).length === 0) {
+            loadMoreBtn.style.display = 'none';
+        }
+
+    });
+
+    });
+</script>
 </body>
 </html>

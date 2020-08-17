@@ -9,12 +9,12 @@
 }
 @font-face {
     font-family: 'ProximaNovaRegular';
-    src: url('../fonts/ProximaNovaRegular.eot');
-    src: url('../fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
-         url('../fonts/ProximaNovaRegular.woff2') format('woff2'),
-         url('../fonts/ProximaNovaRegular.woff') format('woff'),
-         url('../fonts/ProximaNovaRegular.ttf') format('truetype'),
-         url('../fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+    src: url('../fonts/12093-webfont.eot');
+    src: url('../fonts/12093-webfont.eot') format('embedded-opentype'),
+         url('../fonts/12093-webfont.woff2') format('woff2'),
+         url('../fonts/12093-webfont.woff') format('woff'),
+         url('../fonts/12093-webfont.ttf') format('truetype'),
+         url('../fonts/12093-webfont.svg#ProximaNovaRegular') format('svg');
 }
 @font-face {
     font-family: 'ProximaNovaBold';
@@ -45,12 +45,12 @@
 }
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeue.eot');
-    src: url('../fonts/HelveticaNeue.eot') format('embedded-opentype'),
-         url('../fonts/HelveticaNeue.woff2') format('woff2'),
-         url('../fonts/HelveticaNeue.woff') format('woff'),
-         url('../fonts/HelveticaNeue.ttf') format('truetype'),
-         url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    src: url('../fonts/Helvetica.eot');
+    src: url('../fonts/Helvetica.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica.woff2') format('woff2'),
+         url('../fonts/Helvetica.woff') format('woff'),
+         url('../fonts/Helvetica.ttf') format('truetype'),
+         url('../fonts/Helvetica.svg#HelveticaNeue') format('svg');
 }
 @font-face {
     font-family: 'MyriadPro';
@@ -77,15 +77,25 @@ body {
     font-size: 15px;
     line-height: 1.1;
     color: #262626;
-    background-image:url(../img/background-shape.svg);
+    background:url(../img/background-shape.svg) #fafafa;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*.dpx-btn{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}*/
 
 .container{
     width:100%;
     max-width: 935px;
     margin:0 auto;
+}
+
+.profile-page__content{
+    padding-bottom:25px;
 }
 
 h1{
@@ -136,6 +146,8 @@ p{
     border-radius: 3px;
     padding: 10px 12px;
     margin-left: 15px;
+    width: 146px;
+    text-align: center;
 }
 
 .profile-amount{
@@ -176,7 +188,7 @@ p{
 }
 
 .select-date__label{
-    font-family:'ProximaNovaRegular', Arial, sans-serif;;
+    font-family:'ProximaNovaRegular', Arial, sans-serif;
     font-size: 17px;
     color: #262626;
     margin-right: 15px;
@@ -196,6 +208,9 @@ p{
 
 .mode-switchers a{
     font-size: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
 .mode-switchers__grid{
@@ -221,30 +236,40 @@ p{
     background-position: 1px 3px;
 }
 
-.profile-posts{
+.profile-posts_grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 25px;
 }
 
-.profile-posts__post-item{
-    width: 281px;
+.profile-posts_grid .profile-posts__post-item{
+    /*width: 280px;*/
+    width: 30%;
     height: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 46.5px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
 }
 
-.profile-post__row_end-align{
+.visually-hidden { 
+    display: none !important;
+  }
+
+.profile-posts_grid .profile-posts__post-item:nth-child(3n+2){
+    margin-left: 46.5px;
+    margin-right: 46.5px;
+}
+
+.profile-posts_grid .profile-post__row_end-align{
     box-sizing: border-box;
     height: 7%;
     align-items: flex-end;
 }
 
-.profile-post__block{
+.profile-posts_grid .profile-post__block{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -253,7 +278,7 @@ p{
     position: relative;
 }
 
-.profile-post__block_center{
+.profile-posts_grid .profile-post__block_center{
     padding: 0 0 0 10px;
     position: relative;
     height: 93%;
@@ -261,7 +286,7 @@ p{
     align-content: center;
 }
 
-.profile-post__row{
+.profile-posts_grid .profile-post__row{
     z-index: 101;
     position: relative;
     display:flex;
@@ -269,29 +294,29 @@ p{
     padding: 0 0 10px 10px;
 }
 
-.profile-post__row_center-align-new{
+.profile-posts_grid .profile-post__row_center-align-new{
     height: 7%;
 }
 
-.profile-post__row_right-align{
+.profile-posts_grid .profile-post__row_right-align{
     justify-content: flex-end;
     width: 100%;
     position: absolute;
     right: 0;
 }
 
-.profile-post__row_center-align{
+.profile-posts_grid .profile-post__row_center-align{
     justify-content: center;
 }
-.profile-post__video-icon{
+.profile-posts_grid .profile-post__video-icon{
     margin: 10px 15px 0 0;
 }
 
-.profile-post__img{
+.profile-posts_grid .profile-post__img{
     position: absolute;
 }
 
-.profile-post__img img{
+.profile-posts_grid .profile-post__img img{
     max-width: 280px;
     display: block;
     width: 100%;
@@ -299,7 +324,7 @@ p{
     position: relative;
 }
 
-.profile-post__img:after{
+.profile-posts_grid .profile-post__img:after{
     content:'';
     background-color: #000;
     opacity: 0.5;
@@ -311,25 +336,25 @@ p{
     left: 0
 }
 
-.post-item__date{
+.profile-posts_grid .post-item__date{
     width: 40%;
 }
 
-.post-item__info{
+.profile-posts_grid .post-item__info{
     display:flex;
     width:70%;
 }
 
-.post-item__likes, .post-item__comments, .post-item__watches{
+.profile-posts_grid .post-item__likes, .post-item__comments, .post-item__watches{
     display: flex;
     width: 50%;
 }
 
-.post-item__info-img {
+.profile-posts_grid .post-item__info-img {
     background-repeat: no-repeat;
 }
 
-.post-item__likes .post-item__info-img {
+.profile-posts_grid .post-item__likes .post-item__info-img {
     background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
     height: 21px;
@@ -337,7 +362,7 @@ p{
     margin-right: 5px;
 }
 
-.post-item__comments .post-item__info-img {
+.profile-posts_grid .post-item__comments .post-item__info-img {
     background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
     height: 25px;
@@ -345,7 +370,7 @@ p{
     margin-right: 5px;
 }
 
-.post-item__watches .post-item__info-img {
+.profile-posts_grid .post-item__watches .post-item__info-img {
     background-image: url(../img/post-info/post-item-sprite.svg);
     width: 25px;
     height: 25px;
@@ -382,16 +407,22 @@ button{
     }
 
     .profile-title{
-        margin: 0 auto;
-        display: table;
+        width: 100%;
+        text-align: center;
     }
 
     .profile-info__row{
         margin-bottom: 25px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profile-info__select-date {
+        justify-content: center;
     }
 
     .profile-start-date{
-        margin: 0 auto;
         display: table;
     }
 
@@ -399,38 +430,48 @@ button{
         width: 100%;
     }
 
-    .profile-posts__post-item{
-        width: 45%;
+    .profile-posts_grid .profile-posts__post-item{
+        width: 292px;
+        height: 292px;
     }
 
-    .profile-post__img img{
-        max-width: 100%;
+    .profile-posts_grid .profile-post__img img{
+        max-width: 292px;
     }
 
-    .profile-info__row_center{
+    .profile-posts_grid .profile-info__row_center{
         display: flex;
         justify-content: center;
     }
 
-    .profile-info__select-date {
+    .profile-posts_grid .profile-info__select-date {
         justify-content: center;
+    }
+
+    .profile-posts_grid .profile-posts__post-item:nth-child(3n+2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profile-posts_grid {
+        justify-content: space-evenly;
     }
 }
 
 @media screen and (max-width:500px) {
-    .profile-posts {
+    .profile-posts_grid .profile-posts {
         justify-content: center;
     }
 
-    .profile-posts__post-item{
+    .profile-posts_grid .profile-posts__post-item{
         width: 90%;
     }
 
-    .profile-post__img img{
+    .profile-posts_grid .profile-post__img img{
         max-width: 100%;
     }
 
-    .select-date__label{
+    .profile-posts_grid .select-date__label{
         width: 100%;
         display: inline-block;
         text-align: center;
@@ -448,4 +489,126 @@ button{
 }
 
 
+.profile-posts_list .profile-posts__post-item{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
 
+.profile-posts_list .profile-posts__post-item:last-child{
+    margin-bottom: 0;
+}
+
+.profile-posts_list .profile-post__img{
+    max-width: 95px;
+    position: relative;
+}
+
+.profile-posts_list .profile-post__img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile-posts_list .profile-post__block{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.profile-posts_list .profile-post__row {
+    width: 50%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.profile-posts_list .profile-post__upload{
+    width: 20%;
+}
+
+.profile-posts_list .post-item__date p{
+    font-family: 'ProximaNovaSemiBold', Arial, sans-serif;
+    color: #343537;
+    margin-bottom: 10px;
+}
+
+.profile-posts_list .post-item__info{
+    display: flex;
+}
+
+.profile-posts_list .profile-post__video-icon{
+    display: none;
+}
+
+.profile-posts_list .post-item__info p{
+    font-family: 'ProximaNovaBold', Arial, sans-serif;
+    color: #343537;
+}
+
+.profile-posts_list .post-item__info-img {
+    background-repeat: no-repeat;
+}
+
+.profile-posts_list .post-item__likes .post-item__info-img {
+    background-image: url(../img/post-info/post-item-black-sprite.svg);
+    width: 25px;
+    height: 21px;
+    background-position: top;
+    margin-right: 5px;
+}
+
+.profile-posts_list .post-item__comments .post-item__info-img {
+    background-image: url(../img/post-info/post-item-black-sprite.svg);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.profile-posts_list .post-item__watches .post-item__info-img {
+    background-image: url(../img/post-info/post-item-black-sprite.svg);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.profile-posts_list .profile-post__img:after{
+    display:none;
+} 
+
+.profile-list .profile-post__img {
+    position: relative;
+}
+
+.profile-posts_list .post-item__likes, .post-item__comments, .post-item__watches {
+    display: flex;
+}
+
+.profile-posts_list .profile-post__row_center-align p{
+    font-family: 'HelveticaCEBold';
+    color: #343537;
+    max-width: 115px;
+}
+
+.profile-posts_list .profile-post__video{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .profile-posts_list .profile-post__upload {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .profile-posts_list .profile-post__row_center-align p {
+        max-width: inherit; 
+    }
+}

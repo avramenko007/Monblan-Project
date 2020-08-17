@@ -139,6 +139,17 @@
             }
         }
 
+        /*function createClearButton() {
+            elements.container = document.getElementsByClassName('date-picker-x-container')[0];
+
+            console.log(elements.container);
+
+            if (options.clearButton) {
+                var btns = createElement('div', 'dpx-btns', elements.container);
+                options.clearButton && (elements.clear = createElement('span', ['dpx-item', 'dpx-clear'], btns, options.clearButtonLabel, options.clearButtonLabel));
+            }
+        }*/
+
         /**
          * Returns date according to passed format
          *
