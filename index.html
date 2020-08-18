@@ -446,48 +446,7 @@
     }
 </script>
 <script type="text/javascript" src="./js/jquery-1.7.1.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-    $('#list').click(function(event){event.preventDefault();
-        $('.profile-posts').addClass('profile-posts_list').removeClass('profile-posts_grid');
-        $('.mode-switchers__list').addClass('mode-switchers__list_active');
-        $('.mode-switchers__grid').removeClass('mode-switchers__grid_active')});
-        $('#grid').click(function(event){event.preventDefault();
-        $('.profile-posts').removeClass('profile-posts_list');
-        $('.profile-posts').addClass('profile-posts_grid');
-        $('.mode-switchers__grid').addClass('mode-switchers__grid_active');
-        $('.mode-switchers__list').removeClass('mode-switchers__list_active')});
-});
-</script>
-<script>
-    var parent = document.getElementsByClassName('profile-posts')[0],
-    items  = parent.getElementsByClassName('profile-posts__post-item'),
-    loadMoreBtn =  document.querySelector('#loadMore'),
-    maxItems = 3,
-    hiddenClass = "visually-hidden";
-
-
-    [].forEach.call(items, function(item, idx){
-        if (idx > maxItems - 1) {
-            item.classList.add(hiddenClass);
-        }
-    });
-
-    loadMoreBtn.addEventListener('click', function(){
-
-    [].forEach.call(document.querySelectorAll('.' + hiddenClass), function(item, idx){
-        /*console.log(item);*/
-        if (idx < maxItems - 0) {
-            item.classList.remove(hiddenClass);
-        }
-
-        if ( document.querySelectorAll('.' + hiddenClass).length === 0) {
-            loadMoreBtn.style.display = 'none';
-        }
-
-    });
-
-    });
-</script>
+<script type="text/javascript" src="./js/switchers.js"></script>
+<script type="text/javascript" src="js/loadmore.js"></script>
 </body>
 </html>

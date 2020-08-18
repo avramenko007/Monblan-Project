@@ -25,7 +25,7 @@
         singleMonthLabels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         todayButton      : false,
         todayButtonLabel : 'Today',
-        clearButton      : true,
+        clearButton      : false,
         clearButtonLabel : 'Clear'
     },
         openedDPX = null;
