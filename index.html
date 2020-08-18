@@ -437,12 +437,12 @@
 </script>
 <script type="text/javascript">
     function functionStart() {
-        document.getElementById("start-date").value = "";
-        document.querySelectorAll('.dpx-selected').forEach(node => node.classList.remove('dpx-selected'));
+        /*event.target.closest('label').querySelector('input').DatePickerX.setValue(null);*/
+        document.getElementById('start-date').DatePickerX.setValue(null);    
     }
     function functionEnd() {
-        document.getElementById("end-date").value = "";
-        document.querySelectorAll('.dpx-selected').forEach(node => node.classList.remove('dpx-selected'));
+        /*event.target.closest('label').querySelector('input').DatePickerX.setValue(null);*/
+        document.getElementById('end-date').DatePickerX.setValue(null);
     }
 </script>
 <script type="text/javascript" src="./js/jquery-1.7.1.js"></script>

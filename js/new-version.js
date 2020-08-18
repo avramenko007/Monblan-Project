@@ -128,30 +128,32 @@
 
             elements.content = createElement('div', 'dpx-content-box', elements.container);
 
-            elements.clearButtonMyMax = document.getElementsByClassName('realDPX-max-clear')[0];
-            elements.clearButtonMyMin = document.getElementsByClassName('realDPX-min-clear')[0];
-
             input.nextElementSibling
                 ? input.parentNode.insertBefore(elements.container, input.nextElementSibling)
                 : input.parentNode.appendChild(elements.container);
 
-            if (options.todayButton || options.clearButton) {
+            if (options.todayButton /*|| options.clearButton*/) {
                 var btns = createElement('div', 'dpx-btns', elements.container);
                 options.todayButton && (elements.today = createElement('span', ['dpx-item', 'dpx-today'], btns, options.todayButtonLabel, options.todayButtonLabel));
-                options.clearButton && (elements.clear = createElement('span', ['dpx-item', 'dpx-clear'], btns, options.clearButtonLabel, options.clearButtonLabel));
+                /*options.clearButton && (elements.clear = createElement('span', ['dpx-item', 'dpx-clear'], btns, options.clearButtonLabel, options.clearButtonLabel));*/
             }
         }
 
-        /*function createClearButton() {
-            elements.container = document.getElementsByClassName('date-picker-x-container')[0];
+        function createClearButton() {
+            /*elements.container = createElement('div', 'date-picker-new');
 
-            console.log(elements.container);
+            console.log(elements.container);*/
 
             if (options.clearButton) {
-                var btns = createElement('div', 'dpx-btns', elements.container);
-                options.clearButton && (elements.clear = createElement('span', ['dpx-item', 'dpx-clear'], btns, options.clearButtonLabel, options.clearButtonLabel));
+                /*var btns = createElement('div', 'dpx-btns', elements.container);
+                options.clearButton && (elements.clear = createElement('span', ['dpx-item', 'dpx-clear'], btns, options.clearButtonLabel, options.clearButtonLabel));*/
+
+
+               /* let realElement = document.querySelector('.real-button');
+                console.log(realElement);
+                options.clearButton && (elements.clear = document.querySelector('.real-button', options.clearButtonLabel, options.clearButtonLabel));*/
             }
-        }*/
+        }
 
         /**
          * Returns date according to passed format
@@ -278,12 +280,6 @@
             {
                 dpx.setValue(null) && elements.container.classList.remove('active');
             });
-           /* elements.clearButtonMyMax.addEventListener('click', function(){
-                dpx.setValue(null) && elements.container.classList.remove('active');
-            });
-            elements.clearButtonMyMin.addEventListener('click', function(){
-                dpx.setValue(null) && elements.container.classList.remove('active');
-            });*/
         }
 
         /**
@@ -478,6 +474,7 @@
                 input.parentNode.classList.add('date-picker-x-container');
                 input.classList.add('date-picker-x-input');
                 input.readOnly = true;
+                createClearButton();
                 createElements();
                 addEvents(this);
 
